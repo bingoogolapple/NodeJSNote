@@ -15,6 +15,8 @@
     "body-parser": "^1.14.2",
     "express": "^4.13.4",
     "mongoose": "^4.3.7",
-    "redis": "^2.4.2"
+    "redis": "^2.4.2",
+    "sails-mongo": "^0.12.0",
+    "waterline": "^0.11.0"
   }
 }

@@ -9,6 +9,14 @@ module.exports = function() {
   app.use(bodyParser.json());
   app.use(express.static('./public'));
 
+  // 利用中间件，将数据集合附加到请求对象中
+  app.use(function(req, res, next){
+    req.models = app.get('models');
+
+    next();
+  });
+
+  require('../app/routes/post.server.routes')(app);
   require('../app/routes/news.server.routes')(app);
 
   app.use(function(req, res, next) {
