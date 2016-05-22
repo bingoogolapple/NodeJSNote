@@ -1,17 +1,17 @@
 {
-  "name": "day03",
+  "name": "little-album",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.15.1",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
-    "jade": "^1.11.0"
+    "formidable": "^1.0.17",
+    "silly-datetime": "^0.1.2"
   }
 }
