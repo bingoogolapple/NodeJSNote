@@ -73,7 +73,7 @@ exports.doPost = function(req,res){
         }
         //判断文件尺寸
         var size = parseInt(files.tupian.size);
-        if(size > 2000){
+        if(size > 1024 * 1024){
             res.send("图片尺寸应该小于1M");
             //删除图片
             fs.unlink(files.tupian.path);
